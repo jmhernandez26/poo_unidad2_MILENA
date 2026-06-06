@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1.0">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>144</x>
+      <y>72</y>
+      <w>264</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>poo::ContenidoAudiovisual
+--
+#titulo: String
+#duracion: int
+#genero: String
+--
++ContenidoAudiovisual(String titulo, int duracion, String genero): ctor
++mostrarDetalles(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>414</x>
+      <y>72</y>
+      <w>378</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>poo::Documental
+--
+-tema: String
+-investigador: Investigador
+--
++Documental(String titulo, int duracion, String genero, String tema, Investigador investigador): ctor
++mostrarDetalles(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>798</x>
+      <y>72</y>
+      <w>318</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>poo::Pelicula
+--
+-director: String
+-actor: Actor
+--
++Pelicula(String titulo, int duracion, String genero, String director, Actor actor): ctor
++mostrarDetalles(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>144</x>
+      <y>162</y>
+      <w>378</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>poo::SerieDeTV
+--
+-temporadas: int
+-temporada: Temporada
+--
++SerieDeTV(String titulo, int duracion, String genero, int temporadas, Temporada temporada): ctor
++mostrarDetalles(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>528</x>
+      <y>162</y>
+      <w>114</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>poo::Actor
+--
+-nombre: String
+--
++Actor(String nombre): ctor
++getNombre(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>144</x>
+      <y>240</y>
+      <w>300</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>poo::Cortometraje
+--
+-productor: String
+--
++Cortometraje(String titulo, int duracion, String genero, String productor): ctor
++mostrarDetalles(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>240</y>
+      <w>138</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>poo::Investigador
+--
+-nombre: String
+--
++Investigador(String nombre): ctor
++getNombre(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>144</x>
+      <y>312</y>
+      <w>120</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>poo::Temporada
+--
+-numero: int
+--
++Temporada(int numero): ctor
++getNumero(): int
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>270</x>
+      <y>312</y>
+      <w>288</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>poo::VideoYouTube
+--
+-canal: String
+--
++VideoYouTube(String titulo, int duracion, String genero, String canal): ctor
++mostrarDetalles(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>564</x>
+      <y>312</y>
+      <w>102</w>
+      <h>42</h>
+    </coordinates>
+    <panel_attributes>poo::PruebaAudioVisual
+--
+--
++main(String[] args): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
